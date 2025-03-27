@@ -1,41 +1,89 @@
-/* Box Model Hack */
-* {
-     box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
 /******************************************
-/* BASE STYLES
+/* CSS
 /*******************************************/
 
-body {
-
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+body {
+  color: white    ;
+}
+
+main {
+  height: 100vh;
+  background-image: url(owen+wilson+thumbnail.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 50px;
+  
+}
+.mainContent {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.section1, .section2 {
+  background-color: rgba(88, 88, 88, 0.7);
+}
+
+.section1 p {
+  font-size: 1.3em;
+}
+
+button {
+  margin-bottom: 50px;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 90%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  width: 100%;
+  height: 100%;
+} 
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+
+img{
+  width: 80%;
+  align-self: center;
 
 }
 
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
